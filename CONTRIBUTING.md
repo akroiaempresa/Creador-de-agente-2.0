@@ -82,4 +82,4 @@ Estas son las áreas donde más se necesita ayuda:
 ## Preguntas
 
 Si tienes dudas sobre cómo contribuir, abre un Issue o pregunta en la comunidad:
-👥 https://skool.com/horizontes-ia
+👥 https://skool.com/akroia

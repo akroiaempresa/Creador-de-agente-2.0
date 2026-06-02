@@ -136,7 +136,7 @@ Lee [CONTRIBUTING.md](./CONTRIBUTING.md) — toda ayuda es bienvenida.
 
 ## Comunidad y soporte
 
-- 👥 **Comunidad Skool:** https://skool.com/horizontes-ia
+- 👥 **Comunidad Skool:** https://skool.com/akroia
 - 🐛 **Issues:** abre uno en este repositorio
 - 🐦 **Twitter:** @tazeebtw
 

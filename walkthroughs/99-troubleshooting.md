@@ -180,4 +180,4 @@ Agrégalas si no existen y vuelve a intentar.
 2. **Dile a Claude Code:** "Me sale este error: [pega el error]"
 3. Si Claude Code no puede resolverlo: comparte el error en la comunidad
 
-👥 **Comunidad:** https://skool.com/horizontes-ia
+👥 **Comunidad:** https://skool.com/akroia
