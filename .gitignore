@@ -1,0 +1,30 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Llaves de acceso — NUNCA subir al repositorio
+.dev.vars
+.dev.vars.*
+*.env
+.env.*
+!.env.example
+
+# Builds
+dist/
+build/
+.wrangler/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

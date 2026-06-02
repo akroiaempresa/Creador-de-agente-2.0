@@ -1,0 +1,47 @@
+{
+  // wrangler.jsonc — Configuración de tu agente en Cloudflare
+  // Edita los valores marcados con TODO
+
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // ── Identificación ──────────────────────────────────────────────────────
+  "name": "mi-agente",           // TODO: cambia esto por el nombre de tu agente (sin espacios)
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",  // Actualizar si wrangler lo pide
+  "compatibility_flags": ["nodejs_compat"],
+
+  // ── Durable Objects (la "memoria" del agente) ───────────────────────────
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "AGENT_STORAGE",
+        "class_name": "MiAgente"   // Debe coincidir con el nombre de la clase en index.ts
+      }
+    ]
+  },
+
+  // ── Migraciones de Durable Objects ──────────────────────────────────────
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["MiAgente"]
+    }
+  ],
+
+  // ── Cron: cuándo se ejecuta el agente automáticamente ───────────────────
+  // Formato: "minuto hora día-del-mes mes día-de-la-semana"
+  // Ejemplos:
+  //   "0 14 * * *"   → todos los días a las 8am Ciudad de México (UTC-6)
+  //   "0 8 * * 1-5"  → lunes a viernes a las 2am UTC (8am CDMX)
+  //   "0 */6 * * *"  → cada 6 horas
+  //   "*/30 * * * *" → cada 30 minutos
+  "triggers": {
+    "crons": ["0 14 * * *"]   // TODO: ajusta al horario que quieras (en UTC)
+  },
+
+  // ── Observabilidad ──────────────────────────────────────────────────────
+  // Permite ver logs en tiempo real desde el dashboard de Cloudflare
+  "observability": {
+    "enabled": true
+  }
+}
